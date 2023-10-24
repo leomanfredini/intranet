@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links - Sistemas</title>
+    <!-- Inclua o link para o CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS personalizado para a cor de fundo, largura máxima e efeitos de hover nos links -->
+    <link rel="shortcut icon" href="http://legado.farroupilha.rs.gov.br/downloads/3592braso_40x40.ico" />
+    <style>
+        body {
+            background-color: #f0f0f0; /* Cor de fundo cinza claro */
+        }
+        .custom-container {
+            max-width: 800px; /* Largura máxima personalizada */
+            margin-bottom: 50px;
+        }
+        .list-group-item {
+            background-color: transparent !important; /* Defina o fundo como transparente com !important para prioridade */
+            border: none; /* Remova a borda (opcional, dependendo do seu estilo desejado) */
+            padding-left: 0; /* Ajuste o espaçamento interno conforme necessário */
+        }
+        /* Efeito de hover nos links */
+        .list-group-item a:hover {
+            color: #3f3f3f; /* Cor de texto ao passar o mouse sobre o link */
+            background-color: #7bff6a; /* Cor de fundo ao passar o mouse sobre o link */
+        }
+        /* Centralizar o texto dentro dos itens da lista */
+        .list-group-item a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-decoration: none; /* Remover o sublinhado */
+            color: #ffffff; /* Cor do texto padrão */
+            background-color: #118f5a; /* Cor de fundo padrão */
+            transition: background-color 0.7s ease; /* Transição de cor de fundo */
+            font-size: 22px;
+            border: none;
+            font-weight: bold;
+        }
+
+        /* Rodapé */
+        .footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 4px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container custom-container">
+
+    <!-- Brasão da Prefeitura de Farroupilha -->
+    <div class="text-center mt-5">
+        <img src="http://legado.farroupilha.rs.gov.br/downloads/brasao-170.png" class="img-fluid" alt="Brasão da Prefeitura de Farroupilha">
+    </div>
+
+    <!-- Cabeçalho com título -->
+    <header class="text-center mt-5">
+        <h1 class="text-dark">Portais e Sistemas</h1>
+    </header>
+
+    <!-- Lista de links -->
+    <nav class="mt-4 justify-content-center">
+        <ul class="list-group">
+            <li class="list-group-item"><a href="https://farroupilha.rs.gov.br/" target="_blank" class="btn btn-primary btn-lg btn-block">Portal do Município</a></li>
+            <li class="list-group-item"><a href="https://webmail-seguro.com.br/farroupilha.rs.gov.br/" target="_blank" class="btn btn-primary btn-lg btn-block">Webmail</a></li>            
+            <li class="list-group-item" data-bs-toggle="collapse" data-bs-target="#seiMenu"><a href="#" class="btn btn-primary btn-lg btn-block">SEI - Sistema Eletrônico de Informações</a></li>
+            <div id="seiMenu" class="collapse">
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <a href="manual-sei.pdf" target="_blank" class="btn btn-secondary" type="button">Manual do Sistema</a>
+                    <a href="https://sei.farroupilha.rs.gov.br/" target="_blank" class="btn btn-primary" type="button">Acesso ao Sistema</a>
+                </div>                
+            </div>
+            <li class="list-group-item" data-bs-toggle="collapse" data-bs-target="#chamadosMenu"><a href="#" class="btn btn-primary btn-lg btn-block">Chamados - GLPI</a></li>
+            <div id="chamadosMenu" class="collapse text-center">
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <a href="manual-glpi.pdf" target="_blank" class="btn btn-secondary" type="button">Manual do Sistema</a>
+                    <a href="http://chamados.farroupilha.rs.gov.br/" target="_blank" class="btn btn-primary" type="button">Acesso ao Sistema</a>
+                </div> 
+            </div>
+            <li class="list-group-item"><a href="https://farroupilha.multi24h.com.br/" target="_blank" class="btn btn-primary btn-lg btn-block">Multi24H Tecnosistemas</a></li>
+            <li class="list-group-item"><a href="http://saude.farroupilha.rs.gov.br/" target="_blank" class="btn btn-primary btn-lg btn-block">Saúde - MV</a></li>
+            <li class="list-group-item"><a href="https://leis.farroupilha.rs.gov.br/" target="_blank" class="btn btn-primary btn-lg btn-block">Legislação - Mentor</a></li>
+            <li class="list-group-item"><a href="http://pmfarroupilha.domeletronico.com.br/" target="_blank" class="btn btn-primary btn-lg btn-block">Diário Oficial</a></li>
+            <li class="list-group-item"><a href="https://farroupilha.multi24h.com.br/multi24/sistemas/portal/" target="_blank" class="btn btn-primary btn-lg btn-block">Portal de Serviços (Contracheques, Declaração de Rendimentos)</a></li>
+            <li class="list-group-item"><a href="https://rhid.com.br/" target="_blank" class="btn btn-primary btn-lg btn-block">Ponto Eletrônico - RHiD</a></li>
+        </ul>
+    </nav>
+</div>
+
+
+<!-- Rodapé -->
+<div class="footer fixed-bottom">
+    DTI - Departamento de Tecnologia da Informação
+</div>
+
+<!-- Inclua o link para o JavaScript do Bootstrap (opcional, mas recomendado para recursos interativos) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
