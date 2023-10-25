@@ -1,3 +1,4 @@
-# intranet
+# Intranet
 
-Arquivos fonte da intranet
+> Arquivos fonte do projeto Intranet
+
