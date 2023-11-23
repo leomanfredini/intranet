@@ -12,6 +12,13 @@
         body {
             background-color: #f0f0f0; /* Cor de fundo cinza claro */
         }
+        a {
+            color: inherit; /* Herda a cor do texto pai */
+            text-decoration: none; /* Remove sublinhado padrão */
+        }        
+        a:hover {
+            text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+        }
         .custom-container {
             max-width: 800px; /* Largura máxima personalizada */
             margin-bottom: 50px;
@@ -98,7 +105,7 @@
 
 <!-- Rodapé -->
 <div class="footer fixed-bottom">
-    DTI - Departamento de Tecnologia da Informação
+    <a href="http://legado.farroupilha.rs.gov.br/remoto/" target="_blank">Suporte</a> - Departamento de Tecnologia da Informação
 </div>
 
 <!-- Inclua o link para o JavaScript do Bootstrap (opcional, mas recomendado para recursos interativos) -->
