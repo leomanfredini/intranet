@@ -48,6 +48,33 @@
             font-weight: bold;
         }
 
+
+        .list-group-item-a {
+            background-color: transparent !important; /* Defina o fundo como transparente com !important para prioridade */
+            border: none; /* Remova a borda (opcional, dependendo do seu estilo desejado) */
+            padding-left: 0; /* Ajuste o espaçamento interno conforme necessário */
+        }
+        /* Efeito de hover nos links */
+        .list-group-item-a a:hover {
+            color: #3f3f3f; /* Cor de texto ao passar o mouse sobre o link */
+            background-color: #a5d6ff; /* Cor de fundo ao passar o mouse sobre o link */
+        }
+        /* Centralizar o texto dentro dos itens da lista */
+        .list-group-item-a a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-decoration: none; /* Remover o sublinhado */
+            color: #ffffff; /* Cor do texto padrão */
+            background-color: #002168; /* Cor de fundo padrão */
+            transition: background-color 0.7s ease; /* Transição de cor de fundo */
+            font-size: 22px;
+            border: none;
+            font-weight: bold;
+        }
+        
+
         /* Rodapé */
         .footer {
             text-align: center;
@@ -98,6 +125,8 @@
             <li class="list-group-item"><a href="https://farroupilha.multi24h.com.br/multi24/sistemas/portal/" target="_blank" class="btn btn-primary btn-lg btn-block">Portal de Serviços (Contracheques, Declaração de Rendimentos)</a></li>
             <li class="list-group-item"><a href="https://geo.farroupilha.rs.gov.br/" target="_blank" class="btn btn-primary btn-lg btn-block">Portal de Informações Geográficas - GEOFARROUPILHA</a></li>
             <li class="list-group-item"><a href="https://rhid.com.br/" target="_blank" class="btn btn-primary btn-lg btn-block">Ponto Eletrônico - RHiD</a></li>
+            <li class="list-group-item list-group-item-a"><a href="https://hetrixtools.com/r/bdf4aa4df66cdf3ee97993a1bfad0aff/" target="_blank" class="btn btn-primary btn-lg btn-block">Status Serviços Prefeitura</a></li>
+            <li class="list-group-item list-group-item-a"><a href="https://statusblog.locaweb.com.br/" target="_blank" class="btn btn-primary btn-lg btn-block">Status Serviços Locaweb</a></li>            
         </ul>
     </nav>
 </div>
