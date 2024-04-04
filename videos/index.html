@@ -28,6 +28,28 @@
         .logo-space {
             margin: 0 10px;
         }
+
+        ol {
+            list-style-type: decimal;
+            counter-reset: item;
+        }
+        li {
+            display: block;
+        }
+        li:before {
+            content: counter(item) ".";
+            counter-increment: item;
+            font-weight: bold;
+            margin-right: 0.5em;
+        }
+        ol ol {
+            list-style-type: none;
+            counter-reset: subitem;
+        }
+        ol ol li:before {
+            content: counter(item) "." counter(subitem) " ";
+            counter-increment: subitem;
+        }
     </style>
 </head>
 <body>
@@ -68,18 +90,22 @@
                 <li><a href="#video26">Assinando documento em bloco</a></li>
                 <li><a href="#video27">Retirando documento de bloco de assinatura</a></li>
                 <li><a href="#video28">Excluir ou cancelar documento</a></li>
+                    <ol>
+                        <li><a href="#video28.1">Nova forma de cancelar documentos</a></li>                        
+                    </ol>
                 <li><a href="#video29">Enviar intimação eletrônica</a></li>
                 <li><a href="#video30">Envio de intimação eletrônica com a visualização posterior do usuário externo</a></li>
                 <li><a href="#video31">Relacionar ou anexar processos</a></li>
                 <li><a href="#video32">Habilitando extensão SEI++</a></li>
+                <li><a href="#video33">Valor por extenso</a></li>
             </ol>
         </nav>
 
         <hr class="separator">
       
-        <ul class="list-unstyled">
+        <ol class="list-unstyled">
             <li id="video1" class="video-item">
-                <h2>1 - Acesso inicial do SEI</h2>
+                <h2>Acesso inicial do SEI</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
                         <source src="1-Acesso_inicial_do_SEI.mp4" type="video/mp4">
@@ -89,7 +115,7 @@
                 <p><a href="#top">Voltar ao início da página</a></p>
             </li>
             <li id="video2" class="video-item">
-                <h2>2 - Enviar processo para outra unidade</h2>
+                <h2>Enviar processo para outra unidade</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
                         <source src="2-Enviar_processo_para_outra_unidade.mp4" type="video/mp4">
@@ -99,7 +125,7 @@
                 <p><a href="#top">Voltar ao início da página</a></p>
             </li>
             <li id="video3" class="video-item">
-                <h2>3 - Atualizar andamento</h2>
+                <h2>Atualizar andamento</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
                         <source src="3-Atualizar_andamento.mp4" type="video/mp4">
@@ -109,7 +135,7 @@
                 <p><a href="#top">Voltar ao início da página</a></p>
             </li>
             <li id="video4" class="video-item">
-                <h2>4 - Atribuir processo a usuário interno</h2>
+                <h2>Atribuir processo a usuário interno</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
                         <source src="4-Atribuir_processo_a_usuario_interno.mp4" type="video/mp4">
@@ -119,7 +145,7 @@
                 <p><a href="#top">Voltar ao início da página</a></p>
             </li>
             <li id="video5" class="video-item">
-                <h2>5 - Concluir processo</h2>
+                <h2>Concluir processo</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
                         <source src="5-Concluir_processo.mp4" type="video/mp4">
@@ -129,7 +155,7 @@
                 <p><a href="#top">Voltar ao início da página</a></p>
             </li>
             <li id="video6" class="video-item">
-                <h2>6 - Anotações</h2>
+                <h2>Anotações</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
                         <source src="6-Anotacoes.mp4" type="video/mp4">
@@ -139,7 +165,7 @@
                 <p><a href="#top">Voltar ao início da página</a></p>
             </li>
             <li id="video7" class="video-item">
-                <h2>7 - Acompanhamento especial</h2>
+                <h2>Acompanhamento especial</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
                         <source src="7-Acompanhamento_especial.mp4" type="video/mp4">
@@ -149,7 +175,7 @@
                 <p><a href="#top">Voltar ao início da página</a></p>
             </li>
             <li id="video8" class="video-item">
-                <h2>8 - Marcadores ou Etiquetas</h2>
+                <h2>Marcadores ou Etiquetas</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
                         <source src="8-Marcadores_ou_Etiquetas.mp4" type="video/mp4">
@@ -159,7 +185,7 @@
                 <p><a href="#top">Voltar ao início da página</a></p>
             </li>
             <li id="video9" class="video-item">
-                <h2>9 - Controle de Prazo</h2>
+                <h2>Controle de Prazo</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
                         <source src="9-Controle_de_Prazo.mp4" type="video/mp4">
@@ -169,7 +195,7 @@
                 <p><a href="#top">Voltar ao início da página</a></p>
             </li>
             <li id="video10" class="video-item">
-                <h2>10 - Especificação do processo</h2>
+                <h2>Especificação do processo</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
                         <source src="10-Especificacao_do_processo.mp4" type="video/mp4">
@@ -179,7 +205,7 @@
                 <p><a href="#top">Voltar ao início da página</a></p>
             </li>
             <li id="video11" class="video-item">
-                <h2>11 - Alterar tipo de processo e associar assunto</h2>
+                <h2>Alterar tipo de processo e associar assunto</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
                         <source src="11-Alterar_tipo_processo_associar_assunto.mp4" type="video/mp4">
@@ -189,7 +215,7 @@
                 <p><a href="#top">Voltar ao início da página</a></p>
             </li>
             <li id="video12" class="video-item">
-                <h2>12 - Estatísticas</h2>
+                <h2>Estatísticas</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
                         <source src="12-Estatisticas.mkv" type="video/mp4">
@@ -199,7 +225,7 @@
                 <p><a href="#top">Voltar ao início da página</a></p>
             </li>
             <li id="video13" class="video-item">
-                <h2>13 - Ciência</h2>
+                <h2>Ciência</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
                         <source src="13-Ciencia.mp4" type="video/mp4">
@@ -209,7 +235,7 @@
                 <p><a href="#top">Voltar ao início da página</a></p>
             </li>
             <li id="video14" class="video-item">
-                <h2>14 - Criar processo</h2>
+                <h2>Criar processo</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
                         <source src="14-Criar_processo.mp4" type="video/mp4">
@@ -219,7 +245,7 @@
                 <p><a href="#top">Voltar ao início da página</a></p>
             </li>
             <li id="video15" class="video-item">
-                <h2>15 - Liberação de processo a usuário externo</h2>
+                <h2>Liberação de processo a usuário externo</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
                         <source src="15-Liberacao_processo_usuario_externo.mp4" type="video/mp4">
@@ -229,7 +255,7 @@
                 <p><a href="#top">Voltar ao início da página</a></p>
             </li>
             <li id="video16" class="video-item">
-                <h2>16 - Procurações e vinculações com Pessoa Jurídica</h2>
+                <h2>Procurações e vinculações com Pessoa Jurídica</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
                         <source src="16-Procuracoes_vinculacoes_Pessoa_Juridica.mp4" type="video/mp4">
@@ -239,7 +265,7 @@
                 <p><a href="#top">Voltar ao início da página</a></p>
             </li>
             <li id="video17" class="video-item">
-                <h2>17 - Incluir documento externo</h2>
+                <h2>Incluir documento externo</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
                         <source src="17-Incluir_documento_externo.mp4" type="video/mp4">
@@ -249,7 +275,7 @@
                 <p><a href="#top">Voltar ao início da página</a></p>
             </li>
             <li id="video18" class="video-item">
-                <h2>18 - Incluir documento interno</h2>
+                <h2>Incluir documento interno</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
                         <source src="18-Incluir_documento_interno.mp4" type="video/mp4">
@@ -259,7 +285,7 @@
                 <p><a href="#top">Voltar ao início da página</a></p>
             </li>
             <li id="video19" class="video-item">
-                <h2>19 - Texto padrão em documentos</h2>
+                <h2>Texto padrão em documentos</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
                         <source src="19-Texto_padrao_em_documentos.mp4" type="video/mp4">
@@ -269,7 +295,7 @@
                 <p><a href="#top">Voltar ao início da página</a></p>
             </li>
             <li id="video20" class="video-item">
-                <h2>20 - Documentos favoritos</h2>
+                <h2>Documentos favoritos</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
                         <source src="20-Documentos_favoritos.mp4" type="video/mp4">
@@ -279,7 +305,7 @@
                 <p><a href="#top">Voltar ao início da página</a></p>
             </li>
             <li id="video21" class="video-item">
-                <h2>21 - Alteração do nome e número do documento na árvore do processo</h2>
+                <h2>Alteração do nome e número do documento na árvore do processo</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
                         <source src="21-Alteracao_nome_numero_documento_arvore_processo.mp4" type="video/mp4">
@@ -289,7 +315,7 @@
                 <p><a href="#top">Voltar ao início da página</a></p>
             </li>
             <li id="video22" class="video-item">
-                <h2>22 - Duplicando documentos com o SEI Pró</h2>
+                <h2>Duplicando documentos com o SEI Pró</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
                         <source src="22-Duplicando_documentos_com_SEI_Pro.mp4" type="video/mp4">
@@ -299,7 +325,7 @@
                 <p><a href="#top">Voltar ao início da página</a></p>
             </li>
             <li id="video23" class="video-item">
-                <h2>23 - Restrição de nível de acesso a documentos</h2>
+                <h2>Restrição de nível de acesso a documentos</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
                         <source src="23-Restricao_nivel_acesso_documentos.mp4" type="video/mp4">
@@ -309,7 +335,7 @@
                 <p><a href="#top">Voltar ao início da página</a></p>
             </li>
             <li id="video24" class="video-item">
-                <h2>24 - Solicitar assinatura de usuário externo em documento interno</h2>
+                <h2>Solicitar assinatura de usuário externo em documento interno</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
                         <source src="24-Solicitar_assinatura_usuario_externo_em_documento_interno.mp4" type="video/mp4">
@@ -319,7 +345,7 @@
                 <p><a href="#top">Voltar ao início da página</a></p>
             </li>
             <li id="video25" class="video-item">
-                <h2>25 - Colocando documento para assinatura em bloco</h2>
+                <h2>Colocando documento para assinatura em bloco</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
                         <source src="25-Colocando_documento_assinatura_bloco.mp4" type="video/mp4">
@@ -329,7 +355,7 @@
                 <p><a href="#top">Voltar ao início da página</a></p>
             </li>
             <li id="video26" class="video-item">
-                <h2>26 - Assinando documento em bloco</h2>
+                <h2>Assinando documento em bloco</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
                         <source src="26-Assinando_documento_bloco.mp4" type="video/mp4">
@@ -339,7 +365,7 @@
                 <p><a href="#top">Voltar ao início da página</a></p>
             </li>
             <li id="video27" class="video-item">
-                <h2>27 - Retirando documento de bloco de assinatura</h2>
+                <h2>Retirando documento de bloco de assinatura</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
                         <source src="27-Retirando_documento_bloco_assinatura.mp4" type="video/mp4">
@@ -349,7 +375,7 @@
                 <p><a href="#top">Voltar ao início da página</a></p>
             </li>
             <li id="video28" class="video-item">
-                <h2>28 - Excluir ou cancelar documento</h2>
+                <h2>Excluir ou cancelar documento</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
                         <source src="28-Excluir_cancelar_documento.mp4" type="video/mp4">
@@ -358,8 +384,20 @@
                 </div>
                 <p><a href="#top">Voltar ao início da página</a></p>
             </li>
+            <ol>
+                <li id="video28.1" class="video-item">
+                    <h2>Nova forma de cancelar documentos</h2>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
+                            <source src="28-1-Nova_forma_de_cancelar_documentos.mp4" type="video/mp4">
+                            Seu navegador não suporta o vídeo.
+                        </video>
+                    </div>
+                    <p><a href="#top">Voltar ao início da página</a></p>
+                </li>
+            </ol>
             <li id="video29" class="video-item">
-                <h2>29 - Enviar intimação eletrônica</h2>
+                <h2>Enviar intimação eletrônica</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
                         <source src="29-Enviar_intimacao_eletronica.mp4" type="video/mp4">
@@ -369,7 +407,7 @@
                 <p><a href="#top">Voltar ao início da página</a></p>
             </li>
             <li id="video30" class="video-item">
-                <h2>30 - Envio de intimação eletrônica com a visualização posterior do usuário externo</h2>
+                <h2>Envio de intimação eletrônica com a visualização posterior do usuário externo</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
                         <source src="30-Envio_intimacao_com_visualizacao_usuario_externo.mp4" type="video/mp4">
@@ -379,7 +417,7 @@
                 <p><a href="#top">Voltar ao início da página</a></p>
             </li>
             <li id="video31" class="video-item">
-                <h2>31 - Relacionar ou anexar processos</h2>
+                <h2>Relacionar ou anexar processos</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
                         <source src="31-Relacionar_anexar_processos.mp4" type="video/mp4">
@@ -389,7 +427,7 @@
                 <p><a href="#top">Voltar ao início da página</a></p>
             </li>
             <li id="video32" class="video-item">
-                <h2>32 -Habilitando Extensão SEI++</h2>
+                <h2>Habilitando Extensão SEI++</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
                         <source src="32-Habilitando_Extensao_SEIplusplus.mp4" type="video/mp4">
@@ -397,8 +435,18 @@
                     </video>
                 </div>
                 <p><a href="#top">Voltar ao início da página</a></p>
-            </li>            
-        </ul>
+            </li>
+            <li id="video33" class="video-item">
+                <h2>Valor por extenso</h2>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video class="embed-responsive-item" controls style="width: 800px; height: 450px;">
+                        <source src="33-Valor_por_extenso.mp4" type="video/mp4">
+                        Seu navegador não suporta o vídeo.
+                    </video>
+                </div>
+                <p><a href="#top">Voltar ao início da página</a></p>
+            </li>
+        </ol>
     </main>
 
     <!-- Inclua o Bootstrap JS e jQuery (opcional) -->
